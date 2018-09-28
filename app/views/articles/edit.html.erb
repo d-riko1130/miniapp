@@ -1,0 +1,14 @@
+<div class="contents row">
+  <div class="container">
+
+    <%= form_for(@article) do |f| %>
+    <p>編集する？</p>
+    <%= f.text_field :title, placeholder: 'タイトル' %>
+    <%= f.text_field :image, placeholder: '画像URL' %>
+    <%= f.text_area :text, placeholder: '本文', style: 'width: 100% ;height: 200px;' %>
+
+    <%= f.submit "編集する" %>
+    <% end %>
+
+  </div>
+</div>
